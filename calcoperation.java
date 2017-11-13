@@ -103,32 +103,38 @@ public int pow(int base, int exp)
 
 			case 1: 
 				sum = calc.add(x,y);
-				System.out.printf("The sum is %d\n\n",sum);
+				System.out.printf("The Sum is %d\n\n",sum);
 				out.println(x + "+" + y + "=" + sum);
 				break;
 			case 2:
 				sum = calc.sub(x,y);
-				System.out.printf("The sum is %d\n\n",sum);
+				System.out.printf("The Subtraction is %d\n\n",sum);
 				out.println(x + "-" + y + "=" + sum);
 				break;
 			case 3:
 				sum = calc.multi(x,y);
-				System.out.printf("The sum is %d\n\n",sum);
+				System.out.printf("The Multiplication is %d\n\n",sum);
 				out.println(x + "*" + y + "=" + sum);
 				break;
 			case 4:
 				sum = calc.div(x,y);
-				System.out.printf("The sum is %d\n\n",sum);
+				if(sum==0){
+					System.out.print("Please check the number.");
+					break;
+				}
+				else{
+				System.out.printf("The Division is %d\n\n",sum);
 				out.println(x + "/" + y + "=" + sum);
+				}
 				break;
 			case 5:
 				sum = calc.mod(x,y);
-				System.out.printf("The sum is %d\n\n",sum);
+				System.out.printf("The Mod is %d\n\n",sum);
 				out.println(x + "%" + y + "=" + sum);
 				break;
 			case 6:
 				sum = calc.pow(x,y);
-				System.out.printf("The sum is %d\n\n",sum);
+				System.out.printf("The Power is %d\n\n",sum);
 				out.println(x + "^" + y + "=" + sum);
 				break;
 			}
